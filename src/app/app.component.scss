@@ -1,0 +1,29 @@
+/* Import Bootstrap globally *within* this component's scope */
+/* Make sure this path is correct based on your node_modules structure */
+@import "bootstrap/scss/bootstrap";
+
+/* Component-specific styles */
+:host {
+  display: block; /* Ensure the component takes up space */
+  /* Remove padding/border from host if the card provides structure */
+  // padding: 1.5rem;
+  // border: 2px dashed #0d6efd;
+  // border-radius: 0.5rem;
+  // background-color: #f8f9fa;
+}
+
+/* You can still add component-specific overrides or additions here if needed */
+.card-title {
+   // Example: Override card title color if needed, though Bootstrap sets it
+   // color: navy;
+}
+
+// Example for demonstration: make the success alert slightly transparent
+.alert-success {
+  opacity: 0.95;
+}
+
+// Example of overriding a Bootstrap style specifically for this component
+.btn-custom-style {
+  font-weight: bold;
+} 

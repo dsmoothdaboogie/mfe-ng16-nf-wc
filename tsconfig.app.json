@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc", // Matches base, can be specific
+    "types": [] // Often empty for app, might include 'node' if needed
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts" // Ensure this points to your actual polyfills file
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts", // Exclude test files from the app build
+    "src/test.ts"       // Exclude test entry point
+  ]
+} 

@@ -1,0 +1,42 @@
+<div class="container pt-3">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h5 class="card-title mb-0">{{ title }} (Using Bootstrap 5)</h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text text-muted">This web component uses bundled Bootstrap styles within its Shadow DOM.</p>
+
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-circle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Success:">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </svg>
+        <div>
+          Current counter value is: <span class="badge bg-secondary fs-6 text-dark">{{ counter }}</span>
+        </div>
+      </div>
+
+      <div class="row mb-3 gy-2">
+        <div class="col-md-6">
+          <button class="btn btn-success w-100 btn-lg" (click)="increment()">
+            Increment Counter
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-warning w-100" (click)="reset()">
+            Reset Counter
+          </button>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around">
+         <button type="button" class="btn btn-outline-dark btn-sm">Small</button>
+         <button type="button" class="btn btn-outline-danger">Default</button>
+         <button type="button" class="btn btn-outline-info btn-lg">Large</button>
+      </div>
+
+    </div>
+    <div class="card-footer text-body-secondary">
+      Web Component Footer
+    </div>
+  </div>
+</div> 
